@@ -79,7 +79,10 @@ public class ComboFacade {
      * @return preço total
      */
     public double getPrecoTotal() {
-        // Dica: use combo.getPrecoTotal()
+        if (combo == null) {
+            System.out.println("Nenhum combo criado ainda!");
+            return 0;
+        }
         return combo.getPrecoTotal(); // SUBSTITUIR
     }
 }
