@@ -30,6 +30,6 @@ public class Burger implements ItemCombo {
     
     @Override
     public String toString() {
-        return String.format("%s (R$ %.2f)", nome, preco);
+        return String.format("Burger: %s (R$ %.2f)", nome, preco);
     }
 }

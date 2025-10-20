@@ -33,7 +33,13 @@ public class Combo {
     }
     
     public double getPrecoTotal() {
-        // TODO: Calcule e retorne a soma dos preços dos três itens
-        return 0.0; // SUBSTITUIR
+        double total = 0;
+
+        total += this.burger.getPreco();
+        total += this.bebida.getPreco();
+        total += this.sobremesa.getPreco();
+
+        // return this.burger.getPreco() + this.bebida.getPreco() + this.sobremesa.getPreco();
+        return total;
     }
 }

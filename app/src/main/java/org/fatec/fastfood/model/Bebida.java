@@ -11,21 +11,27 @@ package org.fatec.fastfood.model;
  */
 
 public class Bebida implements ItemCombo {
-    // TODO: Declare os atributos necessários
+    private final String nome;
+    private final double preco;
     
-    // TODO: Implemente o construtor
+    public Bebida(String nome, double preco){
+        this.nome = nome;
+        this.preco = preco;
+    }
     
-    // TODO: Implemente getNome()
     @Override
     public String getNome(){
-        return "";
+        return nome;
     }
     
-    // TODO: Implemente getPreco()
     @Override
     public double getPreco(){
-        return 0;
+        return preco;
     }
     
-    // TODO: Sobrescreva toString() para formatação adequada
+    @Override
+    public String toString(){
+        return String.format("Bebida: %s (R$ %.2f)", this.nome, this.preco);
+    }
+
 }
